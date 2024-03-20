@@ -12,5 +12,5 @@ we add the custom tables or queries inside the models/dbt_project folder and als
 and we add the dbt image and service in the docker-compose-file with volumes,depends-on,environment .\
 macros can be used to replace any long repetitive queries \
 Airflow:\
-The whole pipeline tasks are orchestrated in apache-airflow  .\
+The whole pipeline tasks are orchestrated in apache-airflow  .
 
