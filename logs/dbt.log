@@ -1,0 +1,179 @@
+[0m15:42:58.779438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102e651c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104920b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104935460>]}
+
+
+============================== 15:42:58.782097 | e5c226d9-c744-4d7a-9cb2-d653d54caa7d ==============================
+[0m15:42:58.782097 [info ] [MainThread]: Running with dbt=1.7.9
+[0m15:42:58.782398 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/hiteshchowdarysuryadevara/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:43:22.719512 [debug] [MainThread]: Starter project path: /Users/hiteshchowdarysuryadevara/Library/Python/3.9/lib/python/site-packages/dbt/include/starter_project
+[0m15:43:22.731862 [info ] [MainThread]: 
+Your new dbt project "custom_postgres" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:43:22.732541 [info ] [MainThread]: Setting up your profile.
+[0m15:51:09.131354 [info ] [MainThread]: Profile custom_postgres written to /Users/hiteshchowdarysuryadevara/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m15:51:09.167249 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 490.40387, "process_user_time": 1.072758, "process_kernel_time": 0.172399, "process_mem_max_rss": "91111424", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:51:09.169437 [debug] [MainThread]: Command `dbt init` succeeded at 15:51:09.168856 after 490.41 seconds
+[0m15:51:09.170600 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102e651c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c12dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c128e0>]}
+[0m15:51:09.171670 [debug] [MainThread]: Flushing usage events
+[0m15:51:26.903372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106de6d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1091e7490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109209d00>]}
+
+
+============================== 15:51:26.905785 | 38ef5997-acfb-4030-9b6f-a7c61c85b00b ==============================
+[0m15:51:26.905785 [info ] [MainThread]: Running with dbt=1.7.9
+[0m15:51:26.906081 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/hiteshchowdarysuryadevara/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:51:26.906439 [info ] [MainThread]: dbt version: 1.7.9
+[0m15:51:26.906603 [info ] [MainThread]: python version: 3.9.6
+[0m15:51:26.906754 [info ] [MainThread]: python path: /Library/Developer/CommandLineTools/usr/bin/python3
+[0m15:51:26.906902 [info ] [MainThread]: os info: macOS-13.4-arm64-arm-64bit
+[0m15:51:26.953941 [info ] [MainThread]: Using profiles dir at /Users/hiteshchowdarysuryadevara/.dbt
+[0m15:51:26.954185 [info ] [MainThread]: Using profiles.yml file at /Users/hiteshchowdarysuryadevara/.dbt/profiles.yml
+[0m15:51:26.954362 [info ] [MainThread]: Using dbt_project.yml file at /Users/hiteshchowdarysuryadevara/Documents/visual studio code/elt/dbt_project.yml
+[0m15:51:26.954689 [info ] [MainThread]: adapter type: postgres
+[0m15:51:26.954884 [info ] [MainThread]: adapter version: 1.7.9
+[0m15:51:26.955059 [info ] [MainThread]: Configuration:
+[0m15:51:26.955220 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:51:26.955374 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:51:26.955515 [info ] [MainThread]: Required dependencies:
+[0m15:51:26.955692 [debug] [MainThread]: Executing "git --help"
+[0m15:51:26.969138 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:51:26.969517 [debug] [MainThread]: STDERR: "b''"
+[0m15:51:26.969688 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:51:26.969858 [info ] [MainThread]: Connection:
+[0m15:51:26.970039 [info ] [MainThread]:   host: host.docker.internal
+[0m15:51:26.970182 [info ] [MainThread]:   port: 5434
+[0m15:51:26.970322 [info ] [MainThread]:   user: postgres
+[0m15:51:26.970458 [info ] [MainThread]:   database: destination_db
+[0m15:51:26.970595 [info ] [MainThread]:   schema: public
+[0m15:51:26.970741 [info ] [MainThread]:   connect_timeout: 10
+[0m15:51:26.970883 [info ] [MainThread]:   role: None
+[0m15:51:26.971023 [info ] [MainThread]:   search_path: None
+[0m15:51:26.971160 [info ] [MainThread]:   keepalives_idle: 0
+[0m15:51:26.971296 [info ] [MainThread]:   sslmode: None
+[0m15:51:26.971433 [info ] [MainThread]:   sslcert: None
+[0m15:51:26.971569 [info ] [MainThread]:   sslkey: None
+[0m15:51:26.971705 [info ] [MainThread]:   sslrootcert: None
+[0m15:51:26.971840 [info ] [MainThread]:   application_name: dbt
+[0m15:51:26.971976 [info ] [MainThread]:   retries: 1
+[0m15:51:26.972231 [info ] [MainThread]: Registered adapter: postgres=1.7.9
+[0m15:51:27.002259 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m15:51:27.002635 [debug] [MainThread]: Using postgres connection "debug"
+[0m15:51:27.002792 [debug] [MainThread]: On debug: select 1 as id
+[0m15:51:27.002951 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:51:27.094303 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+could not translate host name "host.docker.internal" to address: nodename nor servname provided, or not known
+
+[0m15:51:27.095709 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m15:51:27.095933 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m15:51:27.096169 [debug] [MainThread]: On debug: No close available on handle
+[0m15:51:27.096416 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m15:51:27.096656 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m15:51:27.096856 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/hiteshchowdarysuryadevara/Documents/visual studio code/elt/dbt_project.yml> not found
+
+[0m15:51:27.097062 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  could not translate host name "host.docker.internal" to address: nodename nor servname provided, or not known
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m15:51:27.098160 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.2265602, "process_user_time": 1.098172, "process_kernel_time": 0.107081, "process_mem_max_rss": "97697792", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:51:27.098573 [debug] [MainThread]: Command `dbt debug` failed at 15:51:27.098474 after 0.23 seconds
+[0m15:51:27.098829 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:51:27.099093 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106de6d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1095357f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109535040>]}
+[0m15:51:27.099382 [debug] [MainThread]: Flushing usage events
+[0m15:52:23.133418 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049b24f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064a4a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106481550>]}
+
+
+============================== 15:52:23.136065 | 8f0533ee-3685-4817-a8b1-198e245ab570 ==============================
+[0m15:52:23.136065 [info ] [MainThread]: Running with dbt=1.7.9
+[0m15:52:23.136370 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/hiteshchowdarysuryadevara/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:52:23.136739 [info ] [MainThread]: dbt version: 1.7.9
+[0m15:52:23.136906 [info ] [MainThread]: python version: 3.9.6
+[0m15:52:23.137056 [info ] [MainThread]: python path: /Library/Developer/CommandLineTools/usr/bin/python3
+[0m15:52:23.137208 [info ] [MainThread]: os info: macOS-13.4-arm64-arm-64bit
+[0m15:52:23.194668 [info ] [MainThread]: Using profiles dir at /Users/hiteshchowdarysuryadevara/.dbt
+[0m15:52:23.194919 [info ] [MainThread]: Using profiles.yml file at /Users/hiteshchowdarysuryadevara/.dbt/profiles.yml
+[0m15:52:23.195098 [info ] [MainThread]: Using dbt_project.yml file at /Users/hiteshchowdarysuryadevara/Documents/visual studio code/elt/dbt_project.yml
+[0m15:52:23.195448 [info ] [MainThread]: adapter type: postgres
+[0m15:52:23.195649 [info ] [MainThread]: adapter version: 1.7.9
+[0m15:52:23.195821 [info ] [MainThread]: Configuration:
+[0m15:52:23.195973 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:52:23.196126 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:52:23.196274 [info ] [MainThread]: Required dependencies:
+[0m15:52:23.196456 [debug] [MainThread]: Executing "git --help"
+[0m15:52:23.210057 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:52:23.210435 [debug] [MainThread]: STDERR: "b''"
+[0m15:52:23.210610 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:52:23.210787 [info ] [MainThread]: Connection:
+[0m15:52:23.210988 [info ] [MainThread]:   host: host.docker.internal
+[0m15:52:23.211142 [info ] [MainThread]:   port: 5434
+[0m15:52:23.211283 [info ] [MainThread]:   user: postgres
+[0m15:52:23.211425 [info ] [MainThread]:   database: destination_db
+[0m15:52:23.211562 [info ] [MainThread]:   schema: public
+[0m15:52:23.211700 [info ] [MainThread]:   connect_timeout: 10
+[0m15:52:23.211839 [info ] [MainThread]:   role: None
+[0m15:52:23.211977 [info ] [MainThread]:   search_path: None
+[0m15:52:23.212113 [info ] [MainThread]:   keepalives_idle: 0
+[0m15:52:23.212249 [info ] [MainThread]:   sslmode: None
+[0m15:52:23.212384 [info ] [MainThread]:   sslcert: None
+[0m15:52:23.212518 [info ] [MainThread]:   sslkey: None
+[0m15:52:23.212652 [info ] [MainThread]:   sslrootcert: None
+[0m15:52:23.212789 [info ] [MainThread]:   application_name: dbt
+[0m15:52:23.212926 [info ] [MainThread]:   retries: 1
+[0m15:52:23.213167 [info ] [MainThread]: Registered adapter: postgres=1.7.9
+[0m15:52:23.216027 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m15:52:23.216360 [debug] [MainThread]: Using postgres connection "debug"
+[0m15:52:23.216512 [debug] [MainThread]: On debug: select 1 as id
+[0m15:52:23.216653 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:52:23.222124 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+could not translate host name "host.docker.internal" to address: nodename nor servname provided, or not known
+
+[0m15:52:23.223154 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m15:52:23.223312 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m15:52:23.223483 [debug] [MainThread]: On debug: No close available on handle
+[0m15:52:23.223842 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m15:52:23.224026 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m15:52:23.224175 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/hiteshchowdarysuryadevara/Documents/visual studio code/elt/dbt_project.yml> not found
+
+[0m15:52:23.224333 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  could not translate host name "host.docker.internal" to address: nodename nor servname provided, or not known
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m15:52:23.225656 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.13018912, "process_user_time": 1.102569, "process_kernel_time": 0.146316, "process_mem_max_rss": "96059392", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m15:52:23.225962 [debug] [MainThread]: Command `dbt debug` failed at 15:52:23.225895 after 0.13 seconds
+[0m15:52:23.226160 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:52:23.226346 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049b24f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10681a9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106854190>]}
+[0m15:52:23.226572 [debug] [MainThread]: Flushing usage events
